@@ -4,11 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
     <title>DevLinks</title>
 </head>
@@ -18,44 +16,66 @@
         <div id="profile">
             <img src="assets/avatar.png" alt="guilherme.teclas">
             <p>Guilherme Moraes</p>
+            <small id="subtitle-music">
+                Pianista, arranjador e professor
+            </small>
+            <small id="subtitle-dev" class="hidden">
+                Desenvolvedor Web - JS / PHP / .Net
+            </small>
         </div>
 
         <div id="switch" onclick="toggleMode()">
             <button></button>
             <span></span>
         </div>
-        <ul>
+
+        <ul id="music">
             <li>
-                <a href="#" target="_blank">Release</a>
+                <a href="https://music.youtube.com/playlist?list=PL7xpTtoNVbc8mSolc7uxzhw9-hXrzMK-C&si=OItzp9pxgBiwOMcQhttps://music.youtube.com/playlist?list=PL7xpTtoNVbc8mSolc7uxzhw9-hXrzMK-C&si=OItzp9pxgBiwOMcQ"
+                    target="_blank">Arranjos - Gravações</a>
             </li>
             <li>
-                <a href="#" target="_blank">Músicas</a>
+                <a href="https://musescore.com/guilherme_teclas" target="_blank">Arranjos - Partituras</a>
             </li>
             <li>
-                <a href="#" target="_blank">Vídeos</a>
+                <a href="https://audio.com/guilhermemoraes" target="_blank">Áudio</a>
             </li>
             <li>
-                <a href="#" target="_blank">Partituras</a>
+                <a href="https://www.youtube.com/playlist?list=PL7xpTtoNVbc-HrjaIKPAB1B8YEdG19UeV"
+                    target="_blank">Vídeo</a>
+            </li>
+            <li>
+                <a href="#">Release</a>
             </li>
         </ul>
+
+        <ul id="dev" class="hidden">
+            <li>
+                <a href="https://github.com/guilherme-teclas" target="_blank">GitHub</a>
+            </li>
+            <li>
+                <a href="https://app.rocketseat.com.br/me/guilherme-moraes-1588874596" target="_blank">RocketSeat</a>
+            </li>
+        </ul>
+
         <div id="social">
             <a href="https://www.linkedin.com/in/guilhermeteclas/" target="_blank">
                 <ion-icon name="logo-linkedin"></ion-icon>
             </a>
-            <a href="https://github.com/guilherme-teclas" target="_blank">
-                <ion-icon name="logo-github"></ion-icon>
-            </a>
             <a href="http://instagram.com/guilherme.teclas" target="_blank">
                 <ion-icon name="logo-instagram"></ion-icon>
             </a>
-            <a href="http://instagram.com/guilherme.teclas" target="_blank">
-                <ion-icon name="logo-twitter"></ion-icon>
+            <a href="https://www.tiktok.com/@guilherme.teclas" target="_blank">
+                <ion-icon name="logo-tiktok"></ion-icon>
             </a>
+            <a href="https://www.twitch.tv/guilhermeteclas" target="_blank">
+                <ion-icon name="logo-twitch"></ion-icon>
+            </a>
+            <a href="https://www.youtube.com/channel/UCLkMtg0GuLIby3AAZp9m-pg" target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon> </a>
         </div>
 
-        <footer>
-            Músico por vocação, .dev por extensão | 2023
-        </footer>
+        <footer></footer>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

@@ -26,6 +26,7 @@
 
 body {
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 
 body * {
@@ -36,6 +37,7 @@ body * {
 #container {
     width: 360px;
     margin: 56px auto 0px;
+    max-width: 588px;
     padding: 0 24px;
 }
 
@@ -70,12 +72,21 @@ body * {
     border-radius: 50%;
     background: white var(--switch-url) no-repeat center;
     position: absolute;
-    top:50%;
-    left:0;
+    top: 50%;
+    left: 0;
     z-index: 1;
     transform: translateY(-50%);
+    animation: slide-back 0.3s;
 }
-.light #switch button {right: 0; left: initial;}
+
+#switch button:hover {
+    outline: 8px solid var(--highlight-color);
+
+}
+
+.light #switch button {
+    animation: slide-in 0.5s forwards;
+}
 
 #switch span {
     display: block;
@@ -89,12 +100,14 @@ body * {
 }
 
 ul {
+    display: none;
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 16px;
     padding: 24px 0;
 }
+
 
 ul li a {
     display: flex;
@@ -117,7 +130,7 @@ ul li a:hover {
 
 #social {
     display: flex;
-    padding: 12px 0;
+    padding: 0px 0;
     font-size: 24px;
     justify-content: center;
 }
@@ -137,4 +150,40 @@ ul li a:hover {
 footer {
     padding: 12px;
     text-align: center;
+}
+
+
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(assets/bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(assets/bg-desktop-light.jpg);
+    }
+}
+
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+.hidden {
+    display: none;
 }
