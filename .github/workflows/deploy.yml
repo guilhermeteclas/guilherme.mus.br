@@ -15,6 +15,6 @@ jobs:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ vars.TARGET }} #/domains/guilherme.mus.br/public_html/
+          TARGET: ${{ vars.TARGET }}
           SOURCE: src/
           ARGS: "-rlgoDzvc -i --delete"
