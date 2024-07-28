@@ -1,4 +1,4 @@
-<h1> Portfolio com agregador de links</h1>
+<h1> Portfólio com agregador de links</h1>
 
 <p>
 Criado a partir do projeto <a> 
